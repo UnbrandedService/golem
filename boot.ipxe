@@ -1,0 +1,8 @@
+#!ipxe
+
+# Set the URL of the IMG file
+set img-url https://f005.backblazeb2.com/b2api/v2/b2_download_file_by_id?fileId=4_z47c9542f49d5d2ea90010614_f20088b0be0ab3897_d20240723_m064350_c005_v0501022_t0052_u01721717030569
+
+# Boot from the IMG file
+initrd ${img-url}
+chain ${img-url}
